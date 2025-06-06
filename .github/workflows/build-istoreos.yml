@@ -108,7 +108,7 @@ jobs:
         make -j$(($(nproc) + 1)) V=s
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: success()
       with:
         name: iStoreOS-QHORA-301W-2.5G-USB
